@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg"
+    tools:context=".bg">
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style_btn"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="250dp"
+        android:text="Save" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="45dp"
+        android:fontFamily="@font/lobster"
+        android:text="Background Remover"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="329dp"
+        android:layout_height="329dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="204dp"
+        android:background="@drawable/empty"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3">
+
+        <ImageView
+            android:id="@+id/bgimageview"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true" />
+    </FrameLayout>
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/imageContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Dummy image previews, replace with your actual images -->
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/image_preview_1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/newimg" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/black"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/image_preview_2"/>
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/image_preview_3"
+                android:src="@drawable/white"/>
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/nature"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/image_preview_2"/>
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/bg"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/image_preview_2"/>
+
+            <!-- Add more image previews here -->
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</FrameLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg"
+    tools:context=".MainActivity">
+
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/appCompatButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="528dp"-->
+<!--        android:background="@drawable/style_btn"-->
+<!--        android:backgroundTint="@color/green"-->
+<!--        android:onClick="selectImageFromGallery"-->
+<!--        android:padding="15dp"-->
+<!--        android:text="Select Image from Gallery"-->
+<!--        android:textAlignment="center"-->
+<!--        android:visibility="gone"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:circularflow_radiusInDP="20"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintCircleRadius="20dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.446"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView3"-->
+    <!--        android:layout_width="295dp"-->
+    <!--        android:layout_height="357dp"-->
+    <!--        android:layout_marginBottom="184dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:backgroundTint="@color/white"-->
+
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:srcCompat="@drawable/car" />-->
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/lobster"
+        android:text="Background Remover"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:contentDescription="@string/image_preview_3"
+        android:onClick="selectImageFromGallery"
+        android:layout_marginBottom="224dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/upload"
+        android:visibility="visible"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/style_btn"
+        android:padding="15dp"
+        android:text="Remove Bg"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <!-- Chain the buttons horizontally -->
+
+    <!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/button"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/style_btn"-->
+<!--        android:padding="15dp"-->
+<!--        android:text="Remove Bg"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_margin="10dp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/savebtn"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView3"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/savebtn"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:background="@drawable/style_btn"-->
+<!--        android:padding="15dp"-->
+<!--        android:text="Save"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/button"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView3"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/bgbtn"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:background="@drawable/style_btn"-->
+<!--        android:padding="15dp"-->
+<!--        android:text="Add Background"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/savebtn"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView3"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
