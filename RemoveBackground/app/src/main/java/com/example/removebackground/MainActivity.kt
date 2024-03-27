@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     public fun removeBackground(): String {
-        val apiKey = "NSgfgWwPXhnJoJBzsCeaEiKU"
+        val apiKey = "Insert key here"
         val url = "https://api.remove.bg/v1.0/removebg"
         val selectedUri = selectedImageUri
 
